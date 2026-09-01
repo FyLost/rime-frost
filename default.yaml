@@ -9,17 +9,17 @@ config_version: '0.50'
 # 方案列表
 schema_list:
   # 可以直接删除或注释不需要的方案，对应的 *.schema.yaml 方案文件也可以直接删除
-  - schema: rime_frost             # 白霜拼音（全拼）
-  - schema: rime_frost_double_pinyin          # 自然码双拼
+  # - schema: rime_frost             # 白霜拼音（全拼）
+  # - schema: rime_frost_double_pinyin          # 自然码双拼
   - schema: rime_frost_double_pinyin_mspy     # 微软双拼
-  - schema: rime_frost_double_pinyin_sogou    # 搜狗双拼
-  - schema: rime_frost_double_pinyin_flypy    # 小鹤双拼
-  - schema: rime_frost_t9                     # 仓·九键拼音
+  # - schema: rime_frost_double_pinyin_sogou    # 搜狗双拼
+  # - schema: rime_frost_double_pinyin_flypy    # 小鹤双拼
+  # - schema: rime_frost_t9                     # 仓·九键拼音
   # - schema: rime_frost_double_pinyin_abc      # 智能 ABC 双拼
   # - schema: rime_frost_double_pinyin_ziguang  # 紫光双拼
 
-  - schema: rime_frost_wubi86                 # 白霜五笔86
-  - schema: rime_frost_moqi_single_xh         # 白霜|墨奇音形·鹤拼
+  # - schema: rime_frost_wubi86                 # 白霜五笔86
+  # - schema: rime_frost_moqi_single_xh         # 白霜|墨奇音形·鹤拼
 
 
 # 菜单
@@ -33,7 +33,7 @@ menu:
 switcher:
   caption: 「方案选单」
   hotkeys:
-    - Control+grave
+    # - Control+grave
     - Control+Shift+grave
     # - Alt+grave
   save_options:  # 开关记忆（方案中的 switches），从方案选单（而非快捷键）切换时会记住的选项，需要记忆的开关不能设定 reset
@@ -70,7 +70,7 @@ ascii_composer:
   switch_key:
     Caps_Lock: clear      # commit_code | commit_text | clear
     Shift_L: commit_code  # commit_code | commit_text | inline_ascii | clear | noop
-    Shift_R: noop         # commit_code | commit_text | inline_ascii | clear | noop
+    Shift_R: commit_code  # commit_code | commit_text | inline_ascii | clear | noop
     Control_L: noop       # commit_code | commit_text | inline_ascii | clear | noop
     Control_R: noop       # commit_code | commit_text | inline_ascii | clear | noop
 

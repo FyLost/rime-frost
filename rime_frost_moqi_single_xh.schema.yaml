@@ -40,6 +40,7 @@ engine:
       - key_binder
       - speller
       - punctuator
+      - lua_processor@*space_english_spacer     # 中文模式下首候选为英文单词，空格上屏并追加空格
       - selector
       - navigator
       - express_editor
